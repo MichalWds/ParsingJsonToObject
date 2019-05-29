@@ -13,23 +13,18 @@ public class Epub{
 	public void setIsAvailable(boolean isAvailable){
 		this.isAvailable = isAvailable;
 	}
-
 	public boolean isIsAvailable(){
 		return isAvailable;
 	}
-
 	public void setAcsTokenLink(String acsTokenLink){
 		this.acsTokenLink = acsTokenLink;
 	}
-
 	public String getAcsTokenLink(){
 		return acsTokenLink;
 	}
-
 	public void setDownloadLink(String downloadLink){
 		this.downloadLink = downloadLink;
 	}
-
 	public String getDownloadLink(){
 		return downloadLink;
 	}

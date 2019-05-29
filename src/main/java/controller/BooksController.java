@@ -1,46 +1,43 @@
 package controller;
 
+import booksapi.Books;
 import booksapi.ItemsItem;
-import booksapi.RunBooks;
+import booksapi.RunBooksDemo;
+import booksapi.VolumeInfo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+import repository.BookRepository;
 
 import java.io.IOException;
+import java.util.List;
 
 @RequestMapping("/api")
-@Controller
+@RestController
 public class BooksController {
 
-//    ItemsItem itemsItem;
-//    RunBooks runBooks;
-//
-//    @ResponseBody
-//    @GetMapping("/id/")
-//    public String book (@PathVariable String id){
-//        itemsItem.getId(id);
-//        return id;
-//    }
+    BookRepository bookRepository = new BookRepository();
 
-
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody
-    Object getBeers() {
+    @GetMapping(path = ("/books"), produces = MediaType.APPLICATION_JSON_VALUE)
+    public Object getBooks() {
         ClassPathResource resource = new ClassPathResource("static/books.json");
         try {
             ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(resource.getInputStream(), Object.class);
+            return mapper.readValue(resource.getInputStream(), Books.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "static/books.json";
+        return null;
     }
 
+    @GetMapping(value = "/categories/{category}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<String> idCategories(@PathVariable String category, ModelMap modelMap){
+        ItemsItem itemsItem = new ItemsItem();
+        modelMap.put(category, itemsItem.getVolumeInfo().getCategories());
+        return itemsItem.getVolumeInfo().getCategories();
+    }
 }
 
 

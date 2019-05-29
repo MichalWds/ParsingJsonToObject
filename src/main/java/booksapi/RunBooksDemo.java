@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class RunBooks {
+public class RunBooksDemo {
     public static void main(String[] args) {
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -53,10 +53,10 @@ public class RunBooks {
 
     private static void printPost(ItemsItem itemsItem) {
         System.out.println("\tKind                   :   " + itemsItem.getKind());
-      //  System.out.println("\t Id                  :     " + itemsItem.getId(isbn));
-        System.out.println("\tetag  : " + itemsItem.getEtag());
-        System.out.println("\tselfink : " + itemsItem.getSelfLink());
-        System.out.println("\tvolumeInfo                   : " + itemsItem.getVolumeInfo());
+        //  System.out.println("\t Id                  :     " + itemsItem.getId(isbn));
+        System.out.println("\tetag  : "                     + itemsItem.getEtag());
+        System.out.println("\tselfink : "                        + itemsItem.getSelfLink());
+        System.out.println("\tvolumeInfo                   : " + itemsItem.getVolumeInfo().getCategories());
         System.out.println("\tsalesinfo               : " + itemsItem.getSaleInfo());
         System.out.println("\taccesInfo                  : " + itemsItem.getAccessInfo());
         System.out.println("\tsearchInfo            : " + itemsItem.getSearchInfo());

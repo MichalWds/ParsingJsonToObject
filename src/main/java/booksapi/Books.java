@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Books{
 
-
 	private String requestedUrl;
 	private List<ItemsItem> items;
 
@@ -28,9 +27,9 @@ public class Books{
 	@Override
  	public String toString(){
 		return 
-			"Books{" + 
-			"requestedUrl = '" + requestedUrl + '\'' + 
-			",items = '" + items + '\'' + 
+			"Books{" +
+			"requestedUrl = '" + requestedUrl + '\'' +
+			",items = '" + items + '\'' +
 			"}";
 		}
 }
