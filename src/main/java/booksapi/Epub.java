@@ -3,7 +3,7 @@ package booksapi;
 import javax.annotation.Generated;
 
 
-@Generated("com.robohorse.robopojogenerator")
+
 public class Epub{
 
 	private boolean isAvailable;

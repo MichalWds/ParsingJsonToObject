@@ -1,5 +1,8 @@
 package booksapi;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ItemsItem{
 
 	private SaleInfo saleInfo;
@@ -55,7 +58,7 @@ public class ItemsItem{
 		this.id = id;
 	}
 
-	public String getId(){
+	public String getId(String id){
 		return id;
 	}
 

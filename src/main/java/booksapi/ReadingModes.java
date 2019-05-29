@@ -1,8 +1,5 @@
 package booksapi;
 
-import javax.annotation.Generated;
-
-@Generated("com.robohorse.robopojogenerator")
 public class ReadingModes{
 
 

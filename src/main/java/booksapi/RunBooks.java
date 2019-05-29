@@ -34,7 +34,7 @@ public class RunBooks {
 
     private static void printPageInfo(Core.PageInfo aas) {
         Books books1 = new Books();
-        System.out.println("Proint url");
+        System.out.println("Print url");
         System.out.println("URL   :   + " + books1.getRequestedUrl());
         System.out.println("items: ");
     }
@@ -52,7 +52,7 @@ public class RunBooks {
 
     private static void printPost(ItemsItem itemsItem) {
         System.out.println("\tKind                   :   " + itemsItem.getKind());
-        System.out.println("\t Id                  :     " + itemsItem.getId());
+      //  System.out.println("\t Id                  :     " + itemsItem.getId(isbn));
         System.out.println("\tetag  : " + itemsItem.getEtag());
         System.out.println("\tselfink : " + itemsItem.getSelfLink());
         System.out.println("\tvolumeInfo                   : " + itemsItem.getVolumeInfo());

@@ -3,9 +3,8 @@ package booksapi;
 import javax.annotation.Generated;
 import java.util.List;
 
-@Generated("com.robohorse.robopojogenerator")
-public class SaleInfo{
 
+public class SaleInfo{
 
 	private String country;
 	private boolean isEbook;
@@ -74,14 +73,14 @@ public class SaleInfo{
 	@Override
  	public String toString(){
 		return 
-			"SaleInfo{" + 
-			"country = '" + country + '\'' + 
-			",isEbook = '" + isEbook + '\'' + 
-			",saleability = '" + saleability + '\'' + 
-			",offers = '" + offers + '\'' + 
-			",buyLink = '" + buyLink + '\'' + 
-			",retailPrice = '" + retailPrice + '\'' + 
-			",listPrice = '" + listPrice + '\'' + 
+			"SaleInfo{" +
+			"country = '" + country + '\'' +
+			",isEbook = '" + isEbook + '\'' +
+			",saleability = '" + saleability + '\'' +
+			",offers = '" + offers + '\'' +
+			",buyLink = '" + buyLink + '\'' +
+			",retailPrice = '" + retailPrice + '\'' +
+			",listPrice = '" + listPrice + '\'' +
 			"}";
 		}
 }

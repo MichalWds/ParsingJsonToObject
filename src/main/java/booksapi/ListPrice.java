@@ -1,11 +1,7 @@
 package booksapi;
 
-import javax.annotation.Generated;
 
-
-@Generated("com.robohorse.robopojogenerator")
 public class ListPrice{
-
 
 	private double amount;
 	private String currencyCode;
@@ -38,10 +34,10 @@ public class ListPrice{
 	@Override
  	public String toString(){
 		return 
-			"ListPrice{" + 
-			"amount = '" + amount + '\'' + 
-			",currencyCode = '" + currencyCode + '\'' + 
-			",amountInMicros = '" + amountInMicros + '\'' + 
-			"}";
+
+			 amount + '\'' +
+			 currencyCode + '\'' +
+			+ amountInMicros + '\''
+			;
 		}
 }

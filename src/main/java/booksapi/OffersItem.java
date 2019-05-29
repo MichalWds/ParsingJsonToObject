@@ -1,8 +1,6 @@
 package booksapi;
 
-import javax.annotation.Generated;
 
-@Generated("com.robohorse.robopojogenerator")
 public class OffersItem{
 
 	private int finskyOfferType;
@@ -36,10 +34,10 @@ public class OffersItem{
 	@Override
  	public String toString(){
 		return 
-			"OffersItem{" + 
-			"finskyOfferType = '" + finskyOfferType + '\'' + 
-			",retailPrice = '" + retailPrice + '\'' + 
-			",listPrice = '" + listPrice + '\'' + 
+			"OffersItem{" +
+			"finskyOfferType = '" + finskyOfferType + '\'' +
+			",retailPrice = '" + retailPrice + '\'' +
+			",listPrice = '" + listPrice + '\'' +
 			"}";
 		}
 }

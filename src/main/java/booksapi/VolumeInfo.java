@@ -1,9 +1,7 @@
 package booksapi;
 
 import java.util.List;
-import javax.annotation.Generated;
 
-@Generated("com.robohorse.robopojogenerator")
 public class VolumeInfo{
 
 	private List<IndustryIdentifiersItem> industryIdentifiers;
@@ -208,29 +206,29 @@ public class VolumeInfo{
 	@Override
  	public String toString(){
 		return 
-			"VolumeInfo{" + 
-			"industryIdentifiers = '" + industryIdentifiers + '\'' + 
-			",pageCount = '" + pageCount + '\'' + 
-			",printType = '" + printType + '\'' + 
-			",readingModes = '" + readingModes + '\'' + 
-			",previewLink = '" + previewLink + '\'' + 
-			",canonicalVolumeLink = '" + canonicalVolumeLink + '\'' + 
-			",description = '" + description + '\'' + 
-			",language = '" + language + '\'' + 
-			",title = '" + title + '\'' + 
-			",imageLinks = '" + imageLinks + '\'' + 
-			",subtitle = '" + subtitle + '\'' + 
-			",publisher = '" + publisher + '\'' + 
-			",publishedDate = '" + publishedDate + '\'' + 
-			",categories = '" + categories + '\'' + 
-			",maturityRating = '" + maturityRating + '\'' + 
-			",allowAnonLogging = '" + allowAnonLogging + '\'' + 
-			",contentVersion = '" + contentVersion + '\'' + 
-			",authors = '" + authors + '\'' + 
-			",infoLink = '" + infoLink + '\'' + 
-			",averageRating = '" + averageRating + '\'' + 
-			",panelizationSummary = '" + panelizationSummary + '\'' + 
-			",ratingsCount = '" + ratingsCount + '\'' + 
+			"VolumeInfo{" +
+			"industryIdentifiers = '" + industryIdentifiers + '\'' +
+			",pageCount = '" + pageCount + '\'' +
+			",printType = '" + printType + '\'' +
+			",readingModes = '" + readingModes + '\'' +
+			",previewLink = '" + previewLink + '\'' +
+			",canonicalVolumeLink = '" + canonicalVolumeLink + '\'' +
+			",description = '" + description + '\'' +
+			",language = '" + language + '\'' +
+			",title = '" + title + '\'' +
+			",imageLinks = '" + imageLinks + '\'' +
+			",subtitle = '" + subtitle + '\'' +
+			",publisher = '" + publisher + '\'' +
+			",publishedDate = '" + publishedDate + '\'' +
+			",categories = '" + categories + '\'' +
+			",maturityRating = '" + maturityRating + '\'' +
+			",allowAnonLogging = '" + allowAnonLogging + '\'' +
+			",contentVersion = '" + contentVersion + '\'' +
+			",authors = '" + authors + '\'' +
+			",infoLink = '" + infoLink + '\'' +
+			",averageRating = '" + averageRating + '\'' +
+			",panelizationSummary = '" + panelizationSummary + '\'' +
+			",ratingsCount = '" + ratingsCount + '\'' +
 			"}";
 		}
 }

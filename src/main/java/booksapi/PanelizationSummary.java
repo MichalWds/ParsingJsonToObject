@@ -1,8 +1,5 @@
 package booksapi;
 
-import javax.annotation.Generated;
-
-@Generated("com.robohorse.robopojogenerator")
 public class PanelizationSummary{
 
 	private boolean containsImageBubbles;
@@ -27,9 +24,9 @@ public class PanelizationSummary{
 	@Override
  	public String toString(){
 		return 
-			"PanelizationSummary{" + 
-			"containsImageBubbles = '" + containsImageBubbles + '\'' + 
-			",containsEpubBubbles = '" + containsEpubBubbles + '\'' + 
+			"PanelizationSummary{" +
+			"containsImageBubbles = '" + containsImageBubbles + '\'' +
+			",containsEpubBubbles = '" + containsEpubBubbles + '\'' +
 			"}";
 		}
 }

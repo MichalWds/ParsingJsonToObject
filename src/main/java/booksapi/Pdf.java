@@ -1,8 +1,5 @@
 package booksapi;
 
-import javax.annotation.Generated;
-
-@Generated("com.robohorse.robopojogenerator")
 public class Pdf{
 
 	private boolean isAvailable;
@@ -36,10 +33,10 @@ public class Pdf{
 	@Override
  	public String toString(){
 		return 
-			"Pdf{" + 
-			"isAvailable = '" + isAvailable + '\'' + 
-			",acsTokenLink = '" + acsTokenLink + '\'' + 
-			",downloadLink = '" + downloadLink + '\'' + 
+			"Pdf{" +
+			"isAvailable = '" + isAvailable + '\'' +
+			",acsTokenLink = '" + acsTokenLink + '\'' +
+			downloadLink + '\'' +
 			"}";
 		}
 }
