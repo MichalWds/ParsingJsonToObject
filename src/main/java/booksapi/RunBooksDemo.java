@@ -23,17 +23,17 @@ public class RunBooksDemo {
 
     }
 
-    private static void printParseObject(Books books) {
+    public static void printParseObject(Books books) {
         printBooksInfo(books.getRequestedUrl());
         System.out.println();
         printItems(books.getItems());
 
     }
 
-    private static void printBooksInfo(String books) {
+    public static void printBooksInfo(String books) {
     }
 
-    private static void printPageInfo(Core.PageInfo aas) {
+    public  void printPageInfo(Core.PageInfo aas) {
         Books books1 = new Books();
         System.out.println("Print url");
         System.out.println("URL   :   + " + books1.getRequestedUrl());
@@ -51,15 +51,17 @@ public class RunBooksDemo {
 
     }
 
-    private static void printPost(ItemsItem itemsItem) {
+    public static void printPost(ItemsItem itemsItem) {
+        IndustryIdentifiersItem industryIdentifiersItem = new IndustryIdentifiersItem();
         System.out.println("\tKind                   :   " + itemsItem.getKind());
         //  System.out.println("\t Id                  :     " + itemsItem.getId(isbn));
-        System.out.println("\tetag  : "                     + itemsItem.getEtag());
-        System.out.println("\tselfink : "                        + itemsItem.getSelfLink());
-        System.out.println("\tvolumeInfo                   : " + itemsItem.getVolumeInfo().getCategories());
-        System.out.println("\tsalesinfo               : " + itemsItem.getSaleInfo());
-        System.out.println("\taccesInfo                  : " + itemsItem.getAccessInfo());
-        System.out.println("\tsearchInfo            : " + itemsItem.getSearchInfo());
+//        System.out.println("\tetag  : "                     + itemsItem.getEtag());
+//        System.out.println("\tselfink : "                        + itemsItem.getSelfLink());
+//        System.out.println("\tvolumeInfo                   : " + itemsItem.getVolumeInfo().getCategories());
+//        System.out.println("\tsalesinfo               : " + itemsItem.getSaleInfo());
+//        System.out.println("\taccesInfo                  : " + itemsItem.getAccessInfo());
+//        System.out.println("\tsearchInfo            : " + itemsItem.getSearchInfo());
+        System.out.println("id  " + itemsItem.getVolumeInfo().getIndustryIdentifiers() );
 
     }
 }
