@@ -10,8 +10,8 @@ public class IndustryIdentifiersItem{
 		this.identifier = identifier;
 	}
 
-	public String getIdentifier(){
-		return identifier;
+	public Long getIdentifier(){
+		return Long.valueOf(identifier);
 	}
 
 	public void setType(String type){

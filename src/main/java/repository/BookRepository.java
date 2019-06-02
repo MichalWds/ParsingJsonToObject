@@ -4,9 +4,11 @@ package repository;
 import booksapi.Books;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 
+@Repository
 public class BookRepository {
 
     public Object getBooks() {

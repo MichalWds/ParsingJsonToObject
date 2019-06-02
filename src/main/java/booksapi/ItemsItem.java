@@ -2,6 +2,9 @@ package booksapi;
 
 import org.springframework.stereotype.Service;
 
+import javax.persistence.Entity;
+
+@Entity
 @Service
 public class ItemsItem{
 
