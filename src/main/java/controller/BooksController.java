@@ -51,11 +51,15 @@ public class BooksController extends RunBooksDemo {
     public List<String> idCategories(@PathVariable String category, ModelMap modelMap){
         ItemsItem itemsItem = new ItemsItem();
         modelMap.put(category, itemsItem.getVolumeInfo().getCategories());
-//        if (itemsItem.getVolumeInfo().getIndustryIdentifiers().equals(null)){
-//            return null;
-//        }
+
         return itemsItem.getVolumeInfo().getCategories();
     }
+
+
+
+
+
+
     }
 
 

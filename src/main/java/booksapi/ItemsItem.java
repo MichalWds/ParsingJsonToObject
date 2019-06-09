@@ -2,9 +2,6 @@ package booksapi;
 
 import org.springframework.stereotype.Service;
 
-import javax.persistence.Entity;
-
-@Entity
 @Service
 public class ItemsItem{
 
@@ -61,7 +58,7 @@ public class ItemsItem{
 		this.id = id;
 	}
 
-	public String getId(String id){
+	public String getId(){
 		return id;
 	}
 
