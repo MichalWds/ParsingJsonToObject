@@ -40,7 +40,6 @@ public class RunBooksDemo {
         System.out.println("items: ");
     }
 
-
     private static void printItems(List<ItemsItem> items) {
         System.out.println("Items");
         System.out.println("...");
